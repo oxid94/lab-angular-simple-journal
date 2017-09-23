@@ -1,0 +1,12 @@
+
+<form #myForm="ngForm">
+  <div class="form-group" >
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="text" placeholder="Title" name="title" [(ngModel)]="title">
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <input type="title" class="form-control" id="content" placeholder="Content" name="content" [(ngModel)]="content">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addSingleEntry(myForm)">Submit</button>
+</form>
